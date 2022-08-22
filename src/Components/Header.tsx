@@ -97,8 +97,12 @@ const logoVariants = {
 };
 
 const navVariants = {
-  top: { backgroundColor: "rgba(0,0,0,0)" },
-  scroll: { backgroundColor: "rgba(0,0,0,1)" },
+  top: {
+    backgroundColor: "rgba(0,0,0,0)",
+  },
+  scroll: {
+    backgroundColor: "rgba(0,0,0,1)",
+  },
 };
 
 function Header() {
@@ -114,9 +118,7 @@ function Header() {
         scaleX: 0,
       });
     } else {
-      inputAnimation.start({
-        scaleX: 1,
-      });
+      inputAnimation.start({ scaleX: 1 });
     }
     setSearchOpen((prev) => !prev);
   };
